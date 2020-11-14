@@ -10,5 +10,7 @@ RUN composer install \
     --no-scripts \
     --prefer-dist
 RUN composer update
+RUN chmod -R 777 storage
+RUN chmod -R 777 bootstrap
 RUN a2enmod rewrite
 RUN service apache2 restart

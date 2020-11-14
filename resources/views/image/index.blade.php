@@ -6,8 +6,8 @@
     <title>Random Images</title>
 </head>
 <body>
-    <h5>Ip del server:  {{ $data['ip'] }} </h5>
     <h1> La imagen es: </h1>
     <img src="{{ $data['storage']->url($data['image_name']) }}" alt="">
+    <h2>Ip del server:  {{ $data['ip'] }} </h2>
 </body>
 </html>
